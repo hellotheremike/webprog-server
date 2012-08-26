@@ -1,0 +1,30 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="site_media/style.css">
+</head>
+<body>
+	<div id="head"><img src="site_media/img/head.png"</div>
+	<div id="container">
+		<h1>GuestBook</h1>
+		<form  method="post" action="">
+			{% csrf_token %}  
+			<table>
+				{{form.as_table}}
+			</table>
+			<input type="submit" value="Send Mail">
+		</form>
+	{% if Posts|length > 0%}
+		{% for x in Posts%}	
+			<div class='comment'>
+				<p class="info"><span>Tid:</span> {{x.date|date:"jS F Y H:i" }}</p>
+				<p class="info"><span>Från:</span> <a href="{{x.url}}">{{x.name}}</a></p>
+				<p class="info"><span>Epost:</span> <a href="mailto:{{x.email}}">{{x.email}}</a></p>
+				<p class="mess"><span>Comment</span> {{x.comment}}</p>
+			</div>
+		{%endfor%}		
+	{%else%}
+		<p>No posts yet..</p>
+	{%endif%}
+	</div>
+</body>
+</head>

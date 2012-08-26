@@ -1,0 +1,50 @@
+<html>
+<head>
+</head>
+<body>
+	<form type="POST" action="/">
+		<fieldset>
+			<legend>Logininfo</legend>
+			<input type='hidden' name='Ip' value={{user.REMOTE_ADDR}}>
+			<input type="text" placeholder="username" required="required" title="Enter a username" name="username"/>
+			<br>
+			<input type="password" placeholder="password" required="required" title="Enter Password" name="password"/><br>
+			<textarea rows="5" cols="20" name="message">Personal description goes here...</textarea><br>
+		</fieldset>
+		<fieldset>
+		<legend>Experience</legend>
+			<input type="checkbox" name="qualification" value="I know HTML" />
+			I know HTML<br>
+			<input type="checkbox" name="qualification" value="I know CSS" /> 
+			I know CSS<br>
+			<input type="checkbox" name="qualification" value="I know Django" /> 
+			I know Django<br>
+		</fieldset>
+		<fieldset>	
+			<legend>Gender</legend>	
+			<input type="radio" name="gender" value="male" /> Male<br />
+			<input type="radio" name="gender" value="female" /> Female
+		</fieldset>
+		<fieldset>
+			<legend>Select favorite in list</legend>
+			<select name="favoriteLanguage" >
+				<optgroup label="Client">
+					<option value="HTML">HTML</option>
+					<option value="CSS">CSS</option>
+					<option value="Javascript">Javascript</option>
+					<option value="Compass">Compass</option>
+				</optgroup>
+				<optgroup label="Server">
+					<option value="PHP">PHP</option>
+					<option value="C#">C#</option>
+					<option value="Django">Django</option>
+					<option value="Rubyonrails">Rubyonrails</option>
+				</optgroup>
+			</select>
+		</fieldset>
+		<fieldset>
+			<input type="submit" value="Submit">
+		</fieldset>
+	</form>
+</body>
+</head>

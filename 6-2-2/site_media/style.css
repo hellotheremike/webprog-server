@@ -1,0 +1,105 @@
+/*---------------------
+	PAGE MAIN-STRUCTURE
+-----------------------*/
+body{
+background: url('/site_media/img/bg.png')  repeat-x #83c44e;
+background: #83c44e;
+}
+#head{
+width: 800px; height: 150px;
+border-bottom: 1px solid #252525;
+margin: 0 auto;
+text-align: left;
+}
+#container{
+width: 800px; height: auto;
+margin-top: 20px;
+margin: 0 auto;
+}
+.comment{
+width: 100%; min-height:100px; height: auto;
+margin-top: 20px;
+padding:20px;
+border-bottom: 1px solid #000;
+}
+.comment .info{
+	font: 14px Trebuchet MS;
+	color: #FFFFFF;
+	padding-bottom: 5px;
+	text-align:left;
+	left:14px;
+}
+.comment .info span{
+	position: relative;
+	color: #FFF;
+	background-color: #E01B6A;
+	padding: 2px;
+	border-radius: 2px;
+}
+.comment .mess{
+	font: 14px Trebuchet MS;
+	color: #010101;
+	padding: 12px;
+	border: 1px solid #E01B6A;
+	position: relative;
+	border-radius: 3px;
+	background-color: #fff;
+}
+.comment .mess span{
+	position: absolute;
+	top: -10;
+	color: #FFF;
+	background-color: #E01B6A;
+	padding: 2px;
+	border-radius: 2px;
+}
+.comment img{
+	position:relative;
+	left:15px ;
+	border-radius:5px;
+	max-width:600px;
+	max-height:300px;
+}
+textarea, input{
+	max-width:150px;
+	min-width:150px;
+	width: 150px;
+}
+textarea{
+	max-height:150px;
+	height: 150px;
+}
+input[type=submit]{
+	margin-left: 83px;
+}
+form, p{
+	font: 20px Trebuchet MS;
+	color: #FFFFFF;
+	padding-bottom: 10px;
+	position: relative;
+}
+ul{
+	position: absolute;
+	left:200px;
+	list-style: none;
+}
+ul li{
+	position: relative;
+	top: -13px;
+	font: 12px 'Trebuchet MS';
+	color: #FFF;
+	background-color: #E01B6A;
+	padding: 2px;
+	border-radius: 2px;
+}
+h1{
+	text-align: center;
+	font: bold 50px 'Trebuchet MS' ;
+	color: #FFF;
+}
+a{
+	color: #FFF;
+}
+a:hover{
+	color: #E01B6A;
+}

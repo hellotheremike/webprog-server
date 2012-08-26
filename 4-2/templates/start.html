@@ -1,0 +1,24 @@
+<html>
+<head>
+</head>
+<body>
+	{% if index %}
+		<p>Ifall din webbläsare har kakor aktiverat har nu denna applikation nu sparat ner två kakort på din dator. För att se dess data klicka <a href="/view/">här</a></p>
+		
+	{% elif view %}
+		{% if name and time %}
+			<p>Följande information inbäddad i kakor sändes nu från dig till HTTP-serversides-programmet:</p>
+			<ul>
+				<li>
+					name = {{name}}
+				</li>
+				<li>
+					time = {{time}}
+				</li>
+			</ul>
+		{%else%}
+			<p>Du måste aktivera cookies för att denna app skall fungera.</p>
+		{%endif%}
+	{% endif %}
+</body>
+</head>

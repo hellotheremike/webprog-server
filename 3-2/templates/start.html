@@ -1,0 +1,22 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="site_media/style_.css">
+</head>
+<body>
+	<div id="head"><img src="site_media/img/head.png"</div>
+	<div id="container">
+	{%if meta%}
+		{% for key,value in meta.items %}
+				<p>
+					<span class="key">
+						{{key}} :
+					</span>
+					<span class="data">
+						{{value}} 
+					</span>
+				</p>
+		{% endfor %}
+	{%endif%}		
+	</div>
+</body>
+</head>

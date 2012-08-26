@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+	{%if index%}
+		<form  method="post" action="" enctype="multipart/form-data">
+			{% csrf_token %}  
+			<table>
+				{{form.as_table}}
+			</table>
+			<input type="submit" value="Save name Session">
+		</form>
+	{%else%}
+<pre>
+Session data
+Name = {{req.User_name}}
+IP = {{req.Ip}}
+The sessions prevents you from returning to the <a href="/">startpage</a>, not untill you delete the session
+<a href="/emptySession/">Delete your sessions</a>
+</pre>
+	{%endif%}
+</body>
+</head>

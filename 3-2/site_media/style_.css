@@ -1,0 +1,46 @@
+/*---------------------
+	PAGE MAIN-STRUCTURE
+-----------------------*/
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:bold);
+body{
+
+}
+#head{
+	width: 800px; 
+	height: 150px;
+	border-bottom: 1px solid #252525;
+	margin: 0 auto;
+	text-align: left;
+}
+#container{
+	width: 800px; 
+	margin-top: 20px;
+	margin: 0 auto;
+}
+#container p{
+	font-family: 'Droid Sans';
+	font-size: 12px;
+	line-height: 10px;
+	color: #fff;
+	display: block;
+	text-align: left;
+}
+#container p span.key{
+	margin: 4px;
+	font-weight: bold;
+	font-size: 13px;
+	padding: 3px;
+	background:#E01B6A;
+}
+#container p span.data{
+	margin: 4px;
+	color: #000;
+	margin-left: 0;
+	word-wrap: break-word ;
+	font-weight: normal;
+	display: inline-block;
+	font-size: 13px;
+	padding: 3px;
+	background: transparent;
+}

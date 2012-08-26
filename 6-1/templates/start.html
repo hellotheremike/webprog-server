@@ -1,0 +1,18 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="site_media/style.css">
+</head>
+<body>
+	<div id="head"><img src="site_media/img/head.png"</div>
+	<div id="container">
+		<h1>Server Log</h1>
+	{% for x in Loggs%}	
+		<p class='text'>
+			{{x.date|date:"c"}}<br>
+			{{x.remote_addr}} = {{x.name}}<br>
+			{{x.http_user_agent}}<br>
+		</p>
+	{%endfor%}		
+	</div>
+</body>
+</head>
